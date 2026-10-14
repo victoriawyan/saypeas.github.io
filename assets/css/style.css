@@ -51,15 +51,19 @@ nav {
 }
 
 nav a {
-    color: var(--nav-link-color);
+    color: var(--nav-link-color) !important;
     text-decoration: none;
     margin-left: 20px;
     font-size: 16px;
     text-transform: capitalize;
 }
 
+nav a:visited {
+    color: var(--nav-link-color) !important;
+}
+
 nav a:hover {
-    color: var(--nav-link-hover-color);
+    color: var(--nav-link-hover-color) !important;
 }
 
 /* Main content container */
