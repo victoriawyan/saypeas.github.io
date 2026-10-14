@@ -29,6 +29,19 @@ body {
     padding: 20px;
 }
 
+/* Global link styles - override browser defaults */
+a {
+    color: var(--content-link-color);
+}
+
+a:visited {
+    color: var(--content-link-visited-color);
+}
+
+a:hover {
+    color: var(--content-link-color);
+}
+
 /* Navigation */
 nav {
     max-width: var(--max-width);
