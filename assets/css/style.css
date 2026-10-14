@@ -1,0 +1,160 @@
+/* Customizable variables - edit these to change your site's appearance */
+:root {
+    --background-color: #4a0000;  /* dark dark dark red */
+    --text-color: #ffffff;        /* white */
+    --link-color: #ffffff;        /* white */
+    --link-hover-color: #cccccc;  /* light gray on hover */
+    --font-family: 'Times New Roman', Times, serif;  /* mathptmx equivalent */
+    --font-size: 18px;
+    --line-height: 1.6;
+    --max-width: 700px;
+}
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    padding: 20px;
+}
+
+/* Navigation */
+nav {
+    max-width: var(--max-width);
+    margin: 0 auto 40px;
+    padding: 20px 0;
+}
+
+nav a {
+    color: var(--link-color);
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: var(--link-hover-color);
+}
+
+/* Main content container */
+main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+/* Home page content */
+.home-content {
+    margin-bottom: 40px;
+}
+
+.home-content p {
+    margin-bottom: 20px;
+}
+
+/* Blog list page */
+.blog-list ul {
+    list-style: none;
+}
+
+.blog-list li {
+    margin-bottom: 15px;
+}
+
+.blog-list a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.blog-list a:hover {
+    color: var(--link-hover-color);
+    text-decoration: underline;
+}
+
+/* Blog post page */
+.post h1 {
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 30px;
+    line-height: 1.3;
+}
+
+.post-content {
+    margin-top: 20px;
+}
+
+.post-content p {
+    margin-bottom: 20px;
+}
+
+.post-content a {
+    color: var(--link-color);
+    text-decoration: underline;
+}
+
+.post-content a:hover {
+    color: var(--link-hover-color);
+}
+
+/* Footnotes */
+.footnotes {
+    margin-top: 40px;
+    font-size: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 20px;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    nav {
+        margin-bottom: 30px;
+        padding: 15px 0;
+    }
+
+    nav a {
+        font-size: 14px;
+        margin-right: 15px;
+    }
+
+    .blog-list a {
+        font-size: 18px;
+    }
+
+    .post h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    nav a {
+        font-size: 13px;
+        margin-right: 10px;
+    }
+
+    .blog-list a {
+        font-size: 16px;
+    }
+
+    .post h1 {
+        font-size: 20px;
+    }
+}

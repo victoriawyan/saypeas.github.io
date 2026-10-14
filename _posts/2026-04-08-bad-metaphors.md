@@ -1,8 +1,7 @@
 ---
+layout: post
 title: "Bad metaphors"
 date: 2026-04-08
-excerpt: "What is relatable to you often isn't relatable to your audience"
-show_date: true
 ---
 
 A bad metaphor fails to clarify a concept. For example, today I sat through a 40-minute metaphor on how baseball games represent Markov models which did not clarify Markov models for me because I do not follow baseball--but the presenter loved baseball and shared a metaphor he thought was relatable.
