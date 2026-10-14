@@ -3,8 +3,10 @@
 :root {
     --background-color: #E8DCC4;  /* light sandy/beige from the Volga riverbank */
     --text-color: #5C4A33;        /* dark golden brown */
-    --link-color: #C97064;        /* reddish-pink from the figure's blush */
-    --link-hover-color: #A85B52;  /* deeper rose on hover */
+    --nav-link-color: #C97064;    /* reddish-pink from the figure's blush (for nav) */
+    --nav-link-hover-color: #A85B52;  /* deeper rose on hover (for nav) */
+    --content-link-color: #607D8B;    /* muted blue from Volga sky/water */
+    --content-link-visited-color: #455A64;  /* darker muted blue for visited */
     --font-family: Georgia, 'Times New Roman', serif;
     --font-size: 18px;
     --line-height: 1.6;
@@ -36,7 +38,7 @@ nav {
 }
 
 nav a {
-    color: var(--link-color);
+    color: var(--nav-link-color);
     text-decoration: none;
     margin-left: 20px;
     font-size: 16px;
@@ -44,7 +46,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--link-hover-color);
+    color: var(--nav-link-hover-color);
 }
 
 /* Main content container */
@@ -62,6 +64,19 @@ main {
     margin-bottom: 20px;
 }
 
+.home-content a {
+    color: var(--content-link-color);
+    text-decoration: none;
+}
+
+.home-content a:visited {
+    color: var(--content-link-visited-color);
+}
+
+.home-content a:hover {
+    text-decoration: underline;
+}
+
 /* Blog list page */
 .blog-list ul {
     list-style: none;
@@ -72,13 +87,17 @@ main {
 }
 
 .blog-list a {
-    color: var(--link-color);
+    color: var(--nav-link-color);
     text-decoration: none;
     font-size: 20px;
 }
 
+.blog-list a:visited {
+    color: var(--nav-link-hover-color);
+}
+
 .blog-list a:hover {
-    color: var(--link-hover-color);
+    color: var(--nav-link-hover-color);
     text-decoration: underline;
 }
 
@@ -99,12 +118,16 @@ main {
 }
 
 .post-content a {
-    color: var(--link-color);
-    text-decoration: underline;
+    color: var(--content-link-color);
+    text-decoration: none;
+}
+
+.post-content a:visited {
+    color: var(--content-link-visited-color);
 }
 
 .post-content a:hover {
-    color: var(--link-hover-color);
+    text-decoration: underline;
 }
 
 /* Footnotes */
