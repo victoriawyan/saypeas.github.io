@@ -1,10 +1,11 @@
 /* Customizable variables - edit these to change your site's appearance */
+/* Color palette inspired by Ilya Repin's "Barge Haulers on the Volga" */
 :root {
-    --background-color: #0a192f;  /* deep navy blue */
-    --text-color: #e6f1ff;        /* soft white */
-    --link-color: #64ffda;        /* teal/cyan */
-    --link-hover-color: #a8dadc;  /* lighter blue on hover */
-    --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --background-color: #E8DCC4;  /* light sandy/beige from the Volga riverbank */
+    --text-color: #5C4A33;        /* dark golden brown */
+    --link-color: #C97064;        /* reddish-pink from the figure's blush */
+    --link-hover-color: #A85B52;  /* deeper rose on hover */
+    --font-family: Georgia, 'Times New Roman', serif;
     --font-size: 18px;
     --line-height: 1.6;
     --max-width: 700px;
