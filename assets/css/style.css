@@ -94,6 +94,13 @@ main {
     text-decoration: underline;
 }
 
+.home-content img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    display: block;
+}
+
 /* Blog list page */
 .blog-list ul {
     list-style: none;
